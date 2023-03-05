@@ -1,0 +1,42 @@
+<section class="lista-ofertas">
+    <div class="head-page">
+        <div class="container">
+            <h1>Ofertas</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="ofertas">
+            <div class="ofertas__item">
+                <img (click)="abrirModal()" src="./assets/img/oferta.png"/>
+                <dialog>
+                    <a (click)="fecharModal()"><img class="fechar" src="./assets/img/fechar_modal.svg" /></a>
+                    <div class="box">
+                        <h2>Oferta da Semana</h2>
+                        <img class="img_modal" src="./assets/img/oferta.png"/>
+                        
+                    </div>
+                </dialog>
+            </div>
+            <div class="ofertas__item">
+                <img (click)="abrirModal()" src="./assets/img/oferta.png"/>
+                <dialog>
+                    <div class="box">
+                        <h2>Oferta da Semana</h2>
+                        <img class="img_modal" src="./assets/img/oferta.png"/>
+                        <button (click)="fecharModal()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>      
+                </dialog>
+            </div>    
+            <div class="ofertas__item">
+                <img (click)="abrirModal()" src="./assets/img/oferta.png"/>
+                <dialog>
+                    <div class="box">
+                        <h2>Oferta da Semana</h2>
+                        <img class="img_modal" src="./assets/img/oferta.png"/>
+                        <button (click)="fecharModal()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </dialog>   
+            </div>    
+        </div>
+    </div>
+</section>

@@ -1,0 +1,58 @@
+.head-page{
+    background: rgb(206, 206, 206) 0% 0% no-repeat padding-box;
+    height: 189px;
+    padding-bottom: 40px;
+    margin: 60px auto 40px auto;
+    padding: 0 5%;
+
+    .container{
+        height: 100%;
+       
+
+        h1{
+            padding: 80px;
+            color: var(--cinza);
+            font-size: 2rem;
+        }
+    }
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.sobre-content{
+    margin: 60px 0;
+    justify-content: space-between;
+    display: inline-flex;
+
+    .sobre-img{
+        width: calc(50% - 30px);
+        
+        img {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+            height: 328px;
+        }
+    }
+    .sobre-text{
+        width: calc(50% - 30px);
+        h2{
+            text-align: center;
+            color: var(--cinza);
+            margin-bottom: 40px;
+            font-size: 1.5srem;
+        }
+
+
+    }
+
+   
+
+   
+
+}

@@ -1,0 +1,82 @@
+.head-page{
+    background: rgb(206, 206, 206) 0% 0% no-repeat padding-box;
+    height: 189px;
+    padding-bottom: 40px;
+    margin: 60px auto 40px auto;
+    padding: 0 5%;
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px;
+        
+    }
+
+    h1{
+        
+        color: var(--cinza);
+        font-size: 2rem;
+    }
+}
+
+
+
+.container-geral{
+    column-count: 3;
+    column-gap: 10px;
+    margin: 100px;
+
+}
+
+.imgefeito {
+    margin: 0;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.imgefeito a {
+    text-decoration: none;
+    float: left;
+}
+.imgefeito a:hover {
+    cursor: pointer;
+} 
+
+.imgefeito a img {
+    float: left;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+   
+    
+} 
+
+.imgefeito a:hover .desc{
+    display: block;
+    font-size: 1.2em;
+    background: rgb(18, 18, 18);
+    opacity:.75;
+    color: #fff;
+    position: absolute;
+    bottom: 9px;
+    left: 1px;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    visibility: visible;
+}
+.desc{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    visibility: hidden;
+}
+
+.imgefeito a:hover .desc strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size:1.5em;
+    
+    
+    
+}
