@@ -180,11 +180,17 @@ footer{
 }
 
 @media (max-width: 768px){
-   
     .container-footer{
-        
         flex-direction: column;
 
+        .container-img{
+            margin-bottom: 20px;
+        }
     }
 
+    footer .container-footer .content{
+        margin-left: 0;
+    }
+
+    
 }
