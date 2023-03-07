@@ -7,36 +7,41 @@
     <div class="container">
         <div class="ofertas">
             <div class="ofertas__item">
-                <img (click)="abrirModal()" src="./assets/img/oferta.png"/>
-                <dialog>
-                    <a (click)="fecharModal()"><img class="fechar" src="./assets/img/fechar_modal.svg" /></a>
-                    <div class="box">
-                        <h2>Oferta da Semana</h2>
-                        <img class="img_modal" src="./assets/img/oferta.png"/>
-                        
+                <img (click)="openModal()" src="./assets/img/oferta.png" />
+                <div class="modal-overlay" id="overlay">
+                    <div class="modal" id="modal">
+                        <div class="box">
+                            <h2>Oferta da Semana</h2>
+                            <img class="img_modal" src="./assets/img/oferta.png" />
+                            <button class="fechar" id="fechar"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
                     </div>
-                </dialog>
+                </div>
             </div>
             <div class="ofertas__item">
-                <img (click)="abrirModal()" src="./assets/img/oferta.png"/>
-                <dialog>
-                    <div class="box">
-                        <h2>Oferta da Semana</h2>
-                        <img class="img_modal" src="./assets/img/oferta.png"/>
-                        <button (click)="fecharModal()"><i class="fa-solid fa-xmark"></i></button>
-                    </div>      
-                </dialog>
-            </div>    
-            <div class="ofertas__item">
-                <img (click)="abrirModal()" src="./assets/img/oferta.png"/>
-                <dialog>
-                    <div class="box">
-                        <h2>Oferta da Semana</h2>
-                        <img class="img_modal" src="./assets/img/oferta.png"/>
-                        <button (click)="fecharModal()"><i class="fa-solid fa-xmark"></i></button>
+                <img (click)="openModal()" src="./assets/img/oferta.png" />
+                <div class="modal-overlay" id="overlay">
+                    <div class="modal" id="modal">
+                        <div class="box">
+                            <h2>Oferta da Semana</h2>
+                            <img class="img_modal" src="./assets/img/oferta.png" />
+                            <button class="fechar" id="fechar"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
                     </div>
-                </dialog>   
-            </div>    
+                </div>
+            </div>
+            <div class="ofertas__item">
+                <img (click)="openModal()" src="./assets/img/oferta.png" />
+                <div class="modal-overlay" id="overlay">
+                    <div class="modal" id="modal">
+                        <div class="box">
+                            <h2>Oferta da Semana</h2>
+                            <img class="img_modal" src="./assets/img/oferta.png" />
+                            <button class="fechar" id="fechar"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

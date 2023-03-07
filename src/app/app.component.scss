@@ -158,11 +158,8 @@ footer{
         &__item .icon,.separador{
             display: none;
         }
-        
-        
     }
     
-
     ul li a{
         font-size: 20px;
     }
@@ -170,7 +167,6 @@ footer{
     a:hover, a.active{
         background: none;
         color: #0082e6;
-
     }
 
     #check:checked ~ ul{

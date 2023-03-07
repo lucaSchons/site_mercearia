@@ -15,50 +15,58 @@
     }
 }
 
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
     
 }
 
+.modal{
+    margin: 1rem;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 11px;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+
+    .fechar{
+        width: 50px;
+        display: flex;
+        
+
+    }
+
+    .box{
+        padding: 100px;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+}
+
+
 .ofertas{
     margin: 60px auto 40px auto;
     display: inline-flex;
     justify-content: center;
-
-    dialog::backdrop{
-        background-color: rgb(0 0 0 / .5);
-    }
-    
-   
-    dialog{
-        margin: 50px auto;
-        border: none;
-        border-radius: .5rem;
-        box-shadow: 0 0 1em rgb( 0 0 0 / .3);
-        width: 66%;
-        height: 90vh;
-        z-index: 9999;
-
-        .fechar{
-            width: 50px;
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            top: -1px;
-            right: 8px;
-            
-            
-        }
-
-        .box{
-            padding: 100px;
-            justify-content: center;
-            margin: 0 auto;
-
-        }
-  
-    }
     
     img{
         width: 100%;

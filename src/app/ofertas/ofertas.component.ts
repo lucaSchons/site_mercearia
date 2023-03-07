@@ -8,17 +8,24 @@ import { Component } from "@angular/core";
 
 export class ofertasComponent{
 
-    
-    abrirModal(){
-        console.log('clicou para abrir modal')
-        const modalexe = document.querySelector("dialog")
-        modalexe?.showModal()
+    openModal = () => {
+        const overlay: any = document.getElementById("overlay");
+        const modal: any = document.getElementById("modal");
+        overlay.style.display = 'flex'
+        modal.style.display = 'flex'
+        setTimeout(() => { document.addEventListener('click', this.handleClickOutside, false) }, 200);
     }
 
-    fecharModal(){
-        const modalfechar = document.querySelector("dialog")
-        modalfechar?.close();
+    handleClickOutside = ($event: any) => {
+        let overlay = document.getElementById("overlay");
+        let modal = document.getElementById("modal");
+        let fechar = document.getElementById("fechar");
+        
+        if (!modal?.contains($event.target) || fechar?.contains($event.target)) {
+            modal!.style.display = 'none';
+            overlay!.style.display = 'none';
+            document.removeEventListener('click', this.handleClickOutside, false);
+        }
     }
-    
 
 }
