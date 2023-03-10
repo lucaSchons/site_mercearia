@@ -120,10 +120,74 @@
     
 }
 
-@media (max-width: 768px){
-
+@media (max-width: 858px){
     .head-page{
-    
+        height: 160px;
+
+        .container{
+            padding: 60px;
+        }
+
+        h1{
+            font-size: 1.8rem;
+        }
     }
 
+    .modal{
+        top: 100px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .head-page{
+        height: 120px;
+
+        .container{
+            padding: 50px;
+        }
+
+        h1{
+            font-size: 1.6rem;
+        }
+    }
+
+    .ofertas{
+        margin: 40px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__item{
+            &:nth-child(n+1):nth-child(-n+2){
+                margin: 0 0 30px 0;
+            }
+        }
+
+
+    }
+
+    .modal{
+        top: 100px;
+    }
+}
+
+@media (max-width: 480px){
+    .ofertas{
+        margin: 40px 40px;
+    }
+    .modal{
+        top: 50px;
+        .modal-box{
+            .modal-titulo{
+                height: 60px;
+                margin: 10px 0;
+    
+                h2{
+                    font-size: 1.2rem;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
 }
