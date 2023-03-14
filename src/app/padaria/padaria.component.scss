@@ -21,7 +21,6 @@
     column-count: 3;
     column-gap: 10px;
     margin: 100px;
-
 }
 
 .imgefeito {
@@ -30,47 +29,95 @@
     position: relative;
     overflow: hidden;
 }
-.imgefeito a {
-    text-decoration: none;
-    float: left;
-}
-.imgefeito a:hover {
-    cursor: pointer;
-} 
 
-.imgefeito a img {
+.imgefeito img {
     float: left;
     width: 100%;
     border-radius: 4px;
     margin-bottom: 10px; 
 } 
 
-.imgefeito a:hover .desc{
-    display: block;
-    font-size: 1.2em;
-    background: rgb(18, 18, 18);
-    opacity:.75;
-    color: #fff;
-    position: absolute;
-    bottom: 9px;
-    left: 1px;
-    padding: 10px;
-    margin: 0;
+.desc_modal{
+    border: none;
+    background-color: none;
+    font-size: 18px;
     width: 100%;
-    visibility: visible;
-}
-.desc{
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    visibility: hidden;
+    margin: 10px;
 }
 
-.imgefeito a:hover .desc strong {
-    display: block;
-    margin-bottom: 5px;
-    font-size:1.5em;
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
 }
+
+.modal{
+    margin: 1rem;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 11px;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    top: 95px;
+
+    .fechar{
+        justify-content: center;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        border: none;
+        background-color: #ffffff;
+        opacity: 0.9;
+        transition: 0.4s;
+        cursor: pointer;
+        i{
+            font-size: 2.5rem;
+        }
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    .modal-box{
+        align-items: center;
+        
+        .modal-titulo{
+            text-align: center;
+            height: 60px;
+            border-bottom: 1px solid #b8b8b8;
+            margin: 20px 0;
+
+            h2{
+                font-size: 1.5rem;
+                padding-bottom: 5px;
+            }
+
+            p{
+                font-size: 1rem;
+                color: black;
+            }
+        }
+
+        .modal-img{
+            padding: 0 10px 10px;
+        }
+    }
+}
+
 
 
 @media(max-width: 1024px){
@@ -118,5 +165,9 @@
         column-count: 1;
         column-gap: 8px;
         margin: 20px;
+    }
+
+    .desc_modal{
+        font-size: 14px;
     }
 }

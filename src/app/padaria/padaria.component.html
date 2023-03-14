@@ -4,46 +4,36 @@
             <h1>Nossos Produtos</h1>
         </div>
     </div>
+    <div class="imgefeito">
+        <div class="modal-overlay" id="overlay">
+            <div class="modal" id="modal">
+                <div class="modal-box">
+                    <div class="modal-titulo">
+                        <input value="" disabled class="desc_modal" id="desc_modal" />
+                    </div>
+                    <div class="modal-img">
+                        <img class="img_modal" id="img_modal" src="./assets/img/medialuna_para_postar.png" />
+                    </div>
+                    <button class="fechar" id="fechar"><i class="fa-sharp fa-solid fa-circle-xmark"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-geral">
         <div class="imgefeito">
-            <a href="#">
-                <img src="./assets/img/medialuna_para_postar.png" />
-                <span class="desc">
-                    <strong>Medialuna</strong>
-                </span>
-            </a>
+            <img (click)="openModal()" src="./assets/img/medialuna_para_postar.png" class="small-img"/>
         </div>
         <div class="imgefeito">
-            <a href="#">
-                <img src="./assets/img/rosquinhaa.png" />
-                <span class="desc">
-                    <strong>Rosquinha</strong>
-                </span>
-            </a>
+            <img (click)="openModal()" src="./assets/img/rosquinhaa.png" class="small-img"/>
         </div>
         <div class="imgefeito">
-            <a href="#">
-                <img src="./assets/img/tortafundo mais claro.png" />
-                <span class="desc">
-                    <strong>Torta de Café</strong>
-                </span>
-            </a>
+            <img (click)="openModal()" src="./assets/img/tortafundo mais claro.png" class="small-img" />
         </div>
         <div class="imgefeito">
-            <a href="#">
-                <img src="./assets/img/torta para aniversario.png" />
-                <span class="desc">
-                    <strong>Torta Aniversário</strong>
-                </span>
-            </a>
+            <img (click)="openModal()" src="./assets/img/torta para aniversario.png" class="small-img" />
         </div>
         <div class="imgefeito">
-            <a href="#">
-                <img src="./assets/img/crossaint3.png" />
-                <span class="desc">
-                    <strong>Croissant</strong>
-                </span>
-            </a>
-        </div>    
+            <img (click)="openModal()" src="./assets/img/crossaint3.png" class="small-img" />
+        </div>
     </div>
 </section>
