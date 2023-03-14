@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist\\mercearia-app",
     "ignore": [
       "firebase.json",
       "**/node_modules/**"

@@ -42,7 +42,6 @@ export class padariaComponent{
                     desc_modal.setAttribute('value', valueVar);
                 }
                 
-                
                 overlay.style.display = 'flex'
                 modal.style.display = 'flex'
                 
